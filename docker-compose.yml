@@ -1,0 +1,6 @@
+﻿services:
+  cp2:
+    build: .
+    command: python src/train_cp2.py
+    volumes:
+      - .:/app

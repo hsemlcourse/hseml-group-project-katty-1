@@ -101,3 +101,6 @@ ehthumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
