@@ -40,11 +40,11 @@
 | model                |   threshold |       f1 |   precision |   recall |   roc_auc |   pr_auc | best_params                                                                                        |   cv_pr_auc |
 |:---------------------|------------:|---------:|------------:|---------:|----------:|---------:|:---------------------------------------------------------------------------------------------------|------------:|
 | HistGradientBoosting |         0.5 | 0.318344 |    0.650146 | 0.210775 |  0.796075 | 0.450786 | {'classifier__learning_rate': 0.03, 'classifier__max_iter': 220, 'classifier__max_leaf_nodes': 15} |    0.421203 |
-| GradientBoosting     |         0.5 | 0.323319 |    0.664706 | 0.213611 |  0.793123 | 0.444456 | {'classifier__learning_rate': 0.07, 'classifier__max_depth': 3, 'classifier__n_estimators': 180}   |    0.416851 |
+| GradientBoosting     |         0.5 | 0.323319 |    0.664706 | 0.213611 |  0.793132 | 0.444589 | {'classifier__learning_rate': 0.07, 'classifier__max_depth': 3, 'classifier__n_estimators': 180}   |    0.416913 |
 | RandomForest         |         0.5 | 0.455782 |    0.379723 | 0.569943 |  0.793678 | 0.442854 | {'classifier__max_depth': 14, 'classifier__min_samples_leaf': 8, 'classifier__n_estimators': 350}  |    0.415331 |
-| VotingEnsemble       |         0.5 | 0.472099 |    0.494312 | 0.451796 |  0.791342 | 0.440712 | soft voting: LogisticRegression + RandomForest + GradientBoosting                                  |  nan        |
+| VotingEnsemble       |         0.5 | 0.472099 |    0.494312 | 0.451796 |  0.791343 | 0.440769 | soft voting: LogisticRegression + RandomForest + GradientBoosting                                  |  nan        |
 | ExtraTrees           |         0.5 | 0.427956 |    0.329424 | 0.610586 |  0.787037 | 0.427749 | {'classifier__max_depth': 14, 'classifier__min_samples_leaf': 8, 'classifier__n_estimators': 350}  |    0.403284 |
-| LogisticRegression   |         0.5 | 0.377295 |    0.269029 | 0.63138  |  0.768129 | 0.407772 | {'classifier__C': 0.1, 'classifier__solver': 'liblinear'}                                          |    0.390984 |
+| LogisticRegression   |         0.5 | 0.377295 |    0.269029 | 0.63138  |  0.768128 | 0.407769 | {'classifier__C': 0.1, 'classifier__solver': 'liblinear'}                                          |    0.390978 |
 | DummyClassifier      |         0.5 | 0        |    0        | 0        |  0.5      | 0.11701  | {}                                                                                                 |  nan        |
 
 ## 5. Выбор финальной модели

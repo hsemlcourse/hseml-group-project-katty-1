@@ -1,6 +1,7 @@
 ﻿services:
   cp2:
     build: .
+    container_name: bank-marketing-cp2
     command: python src/train_cp2.py
     volumes:
       - .:/app
