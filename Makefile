@@ -1,4 +1,4 @@
-﻿lint:
+lint:
 	ruff check src
 
 format:
@@ -6,3 +6,6 @@ format:
 
 cp2:
 	python src/train_cp2.py
+
+api:
+	uvicorn src.app:app --reload
